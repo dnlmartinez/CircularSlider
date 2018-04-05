@@ -10,16 +10,23 @@ A powerful Circular Slider. It's written in Swift, it's 100% IBDesignable and al
 CircularSlider is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
+Swift 4:
+
+```ruby
+pod 'CircularSlider' ', :git => 'https://github.com/franck-nadeau/CircularSlider'
+```
+
+
 Swift 3:
 
 ```ruby
-pod 'CircularSlider'
+pod 'CircularSlider' ', :git => 'https://github.com/franck-nadeau/CircularSlider', '~> 1.1.2'
 ```
 
 Swift 2.2:
 
 ```ruby
-pod 'CircularSlider' ', '~> 0.2'
+pod 'CircularSlider' ', :git => 'https://github.com/franck-nadeau/CircularSlider', '~> 0.2'
 ```
 
 # Usage
@@ -51,14 +58,19 @@ The other methods you can implement are:
 ```swift
 optional func circularSlider(circularSlider: CircularSlider, didBeginEditing textfield: UITextField)
 optional func circularSlider(circularSlider: CircularSlider, didEndEditing textfield: UITextField)
+optional func circularSlider(circularSlider: CircularSlider, didBeginValueChange value: Float)
+optional func circularSlider(circularSlider: CircularSlider, didEndValueChange value: Float)
 ```
 
 
 ## Author
 
 taglia3, matteo.tagliafico@gmail.com
-
 [LinkedIn](https://www.linkedin.com/in/matteo-tagliafico-ba6985a3), Matteo Tagliafico
+
+franck-nadeau, contact@francoisnadeau.com
+[LinkedIn](https://www.linkedin.com/in/francois-nadeau-8435981/), Francois Nadeau
+
 
 ## License
 

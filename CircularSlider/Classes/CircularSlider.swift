@@ -293,9 +293,9 @@ open class CircularSlider: UIView {
     
     fileprivate func configureFont() {
         if #available(iOS 8.2, *) {
-            intFont = UIFont.systemFont(ofSize: 42, weight: UIFontWeightRegular)
-            decimalFont = UIFont.systemFont(ofSize: 42, weight: UIFontWeightThin)
-            divisaFont = UIFont.systemFont(ofSize: 26, weight: UIFontWeightThin)
+            intFont = UIFont.systemFont(ofSize: 42, weight: UIFont.Weight.regular)
+            decimalFont = UIFont.systemFont(ofSize: 42, weight: UIFont.Weight.thin)
+            divisaFont = UIFont.systemFont(ofSize: 26, weight: UIFont.Weight.thin)
         }
     }
     
